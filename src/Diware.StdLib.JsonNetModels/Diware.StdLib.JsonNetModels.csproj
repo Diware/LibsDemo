@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>Diware.SL.JsonNetModels</RootNamespace>
+		<Version>1.8.1</Version>
+		<Authors>Dmitrij Lytkin</Authors>
+		<Company>Diware AS</Company>
+		<Product>Diware Standard Library</Product>
+		<Description>Json.NET models for Diware standard library.</Description>
+		<Copyright>Copyright ©2021 Diware AS, Dmitrij Lytkin</Copyright>
+		<PackageIcon>NuGet_Logo_128x128.png</PackageIcon>
+		<PackageReleaseNotes>1.8.1&lt;P&gt;+ Created Json model for ListPage&lt;P&gt;+ Created Json model for PageRequestInfo</PackageReleaseNotes>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageIconUrl>..\..\NuGetIcons\NuGet_Logo_128x128.png</PackageIconUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\NuGetIcons\NuGet_Logo_128x128.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Diware.StdLib\Diware.StdLib.csproj" />
+	</ItemGroup>
+
+</Project>

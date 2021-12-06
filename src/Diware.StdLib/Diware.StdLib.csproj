@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>Diware.SL</RootNamespace>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<Authors>Dmitrij Lytkin</Authors>
+		<Company>Diware AS</Company>
+		<Product>Diware Standard Library</Product>
+		<Description>Diware standard library with structures used across Diware projects.</Description>
+		<Copyright>Copyright ©2017 Diware AS</Copyright>
+		<VersionPrefix>1.8.1</VersionPrefix>
+		<VersionSuffix>$(VersionSuffix)</VersionSuffix>
+		<PackageReleaseNotes>
+			1.8.1
+			+ Updated ListPage and PageRequestInfo: updates Skipped, added LongSkipped.
+			1.8.0
+			+ Added PageRequestInfo.Skipped
+			+ Added PageRequestInfo extensions and ListPage extensions.
+			1.7.4
+			+ Added new enum value: Diware.SL.Results.StandardQueryResultType.RecordNotFound and improved extension methods for StandardQueryResult.
+			+ Introduced interface: IQueryResult&lt;T,TResultType&gt;
+			+ Introduced interface: IStandardQueryResult&lt;T&gt;
+			+ Added PageRequestInfo.All - a static singleton.
+			+ Added IEnumerable interface to ListPage class.
+			1.7.0
+			+ Set Assembly neutral language to English (United States).
+			+ New enum: Diware.SL.Results.StandardQueryResultType
+			+ New class: Diware.SL.Results.QueryResult&lt;T, TResultType&gt;
+			+ New class: Diware.SL.Results.StandardQueryResult&lt;T&gt;
+			+ Obsolete: Diware.SL.Results.IResult
+			+ Obsolete: Diware.SL.Results.ResultBase
+			+ Obsolete: Diware.SL.Results.ResultExtensions
+			1.6.9
+			+ Fixed bug in == operator of ValueObjectT class when left side operand was null.
+			+ Added PageRequestInfo class.
+			+ Changed types of ListPage.Page (int to long) and ListPage.Skipped (int to long).
+			1.6.8
+			+ Fixed bugs in Equals of Entity when Id was null.
+			1.6.7
+			+ Breaking change in ListPage: default constructor marked as Obsolete, Items type changed from List to IEnumerable.
+			1.6.6
+			+ Fixed Equals and added ==, != operators in Entity class.
+			1.6.4
+			+ Added ListPage class.
+			1.6.3
+			+ Added abstract class Entity&lt;TId&gt;, which is a shortcut to Entity&lt;TId, T&gt;.
+			+ Added XML documentation.
+			+ Implemented GetHashCode correctly in Entity&lt;TId, T&gt; class.
+			1.6.2
+			+ Renamed an ISearchElement to IOrderItem and related default implementation.
+			1.6.1
+			+ Made ISearchElement interface public.
+			1.6.0
+			+ Added interface ISearchElement and default implementation: SearchElement.
+			1.5.0
+			+ Added new SetString overload, which accepts maximum string length.
+			+ Added interface IOptions.
+			1.4.0
+			+ Added an IConnectionStringContainer interface and its default implementation (ConnectionStringContainer).
+			1.3.0
+			+ Added IEntity interfaces and base implementation (Entity).
+		</PackageReleaseNotes>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<Version>1.8.1</Version>
+		<AssemblyVersion>1.8.1.0</AssemblyVersion>
+		<FileVersion>1.8.1.0</FileVersion>
+		<PackageIcon>NuGet_Logo_128x128.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>bin\Debug\netstandard2.0\Diware.StdLib.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DocumentationFile>bin\Release\netstandard2.0\Diware.StdLib.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageIconUrl>..\..\NuGetIcons\NuGet_Logo_128x128.png</PackageIconUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\NuGetIcons\NuGet_Logo_128x128.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>

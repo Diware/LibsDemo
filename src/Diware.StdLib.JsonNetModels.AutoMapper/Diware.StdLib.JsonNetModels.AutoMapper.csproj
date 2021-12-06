@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Diware.SL.JsonNetModels.AutoMapper</RootNamespace>
+    <Version>1.8.1</Version>
+    <Authors>Dmitrij Lytkin</Authors>
+    <Company>Diware AS</Company>
+    <Product>Diware Standard Library</Product>
+    <Description>Support library for Diware.StdLib.JsonModels for AutoMapper.</Description>
+    <Copyright>Copyright ©2021 Diware AS, Dmitrij Lytkin</Copyright>
+    <PackageIcon>NuGet_Logo_128x128.png</PackageIcon>
+    <PackageReleaseNotes>1.8.1 Added profile which includes classes from Diware.StdLib.JsonModels v. 1.8.1.</PackageReleaseNotes>
+    <NeutralLanguage>en-US</NeutralLanguage>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<PackageIconUrl>..\..\NuGetIcons\NuGet_Logo_128x128.png</PackageIconUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<ItemGroup>
+    <None Include="..\..\NuGetIcons\NuGet_Logo_128x128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Diware.StdLib.JsonNetModels\Diware.StdLib.JsonNetModels.csproj" />
+  </ItemGroup>
+
+</Project>

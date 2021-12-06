@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diware.StdLib", "Diware.StdLib\Diware.StdLib.csproj", "{0EFA3B98-2A02-498A-AF56-9A49E929C55F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8CBEAC51-E257-479F-92A8-08E05F86533C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{5EAFFFAD-EDBE-4C16-8E94-0DEF06DA3FE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diware.StdLib.UnitTests", "Diware.StdLib.UnitTests\Diware.StdLib.UnitTests.csproj", "{3A19EEED-5E8B-4F11-933F-EE9E6155FB0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diware.StdLib.JsonNetModels.AutoMapper", "Diware.StdLib.JsonNetModels.AutoMapper\Diware.StdLib.JsonNetModels.AutoMapper.csproj", "{DC3866D0-21D0-49F7-B543-5216D0DD3112}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diware.StdLib.JsonNetModels", "Diware.StdLib.JsonNetModels\Diware.StdLib.JsonNetModels.csproj", "{FE1BDE32-928F-4EF4-97F4-523944DDC493}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diware.StdLib.ModelsAutoMapper.UnitTests", "Diware.StdLib.ModelsAutoMapper.UnitTests\Diware.StdLib.ModelsAutoMapper.UnitTests.csproj", "{3923CF20-01E5-4892-A800-0A9604FE6B05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EFA3B98-2A02-498A-AF56-9A49E929C55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFA3B98-2A02-498A-AF56-9A49E929C55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EFA3B98-2A02-498A-AF56-9A49E929C55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EFA3B98-2A02-498A-AF56-9A49E929C55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A19EEED-5E8B-4F11-933F-EE9E6155FB0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A19EEED-5E8B-4F11-933F-EE9E6155FB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A19EEED-5E8B-4F11-933F-EE9E6155FB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A19EEED-5E8B-4F11-933F-EE9E6155FB0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC3866D0-21D0-49F7-B543-5216D0DD3112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3866D0-21D0-49F7-B543-5216D0DD3112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3866D0-21D0-49F7-B543-5216D0DD3112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3866D0-21D0-49F7-B543-5216D0DD3112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE1BDE32-928F-4EF4-97F4-523944DDC493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE1BDE32-928F-4EF4-97F4-523944DDC493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE1BDE32-928F-4EF4-97F4-523944DDC493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE1BDE32-928F-4EF4-97F4-523944DDC493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3923CF20-01E5-4892-A800-0A9604FE6B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3923CF20-01E5-4892-A800-0A9604FE6B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3923CF20-01E5-4892-A800-0A9604FE6B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3923CF20-01E5-4892-A800-0A9604FE6B05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5EAFFFAD-EDBE-4C16-8E94-0DEF06DA3FE7} = {8CBEAC51-E257-479F-92A8-08E05F86533C}
+		{3A19EEED-5E8B-4F11-933F-EE9E6155FB0B} = {5EAFFFAD-EDBE-4C16-8E94-0DEF06DA3FE7}
+		{3923CF20-01E5-4892-A800-0A9604FE6B05} = {5EAFFFAD-EDBE-4C16-8E94-0DEF06DA3FE7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {155C02D4-4EA0-4BE3-B9DD-A437C47DD9AD}
+	EndGlobalSection
+EndGlobal
